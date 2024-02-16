@@ -1,6 +1,6 @@
-from tokenizer import tokenize
+from lexicalAnalyser import tokenize, categorize
 
-print("Enter/Paste your content.")
+print("Enter/Paste your content. Then press ctrl+z in a newline and enter")
 code = ""
 while True:
     try:
@@ -12,4 +12,7 @@ while True:
 
 
 tokens = tokenize(code)
+analyzed = categorize(tokens)
+
 print(tokens)
+print(analyzed)

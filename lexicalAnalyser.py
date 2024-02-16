@@ -1,3 +1,4 @@
+# This function breaks the input into tokens
 def tokenize(inp):
     sol = []
     token = ""
@@ -28,3 +29,7 @@ def tokenize(inp):
         i += 1
 
     return sol
+
+# This functions categorizes the tokens into keywords, special symbols, identifiers etc
+# uses regex
+def categorize(tokens):
